@@ -20,19 +20,17 @@ public class CalculatorActivity extends AppCompatActivity {
         final EditText etext = findViewById(R.id.etext);
         class Calc{
             int num;
-            int getNum(){return num;}
-            void setNum(int num){this.num = num;}
         }
         final Calc calc = new Calc();
 
         findViewById(R.id.btn_plus).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                calc.setNum(Integer.parseInt(etext.getText().toString()));
+                calc.num = Integer.parseInt(etext.getText().toString());
                 etext.setText("");
-                Log.d("입력된 숫자 >>>>>>>>>> ", calc.getNum()+"");
+                Log.d("입력된 숫자 >>>>>>>>>> ", calc.num+"");
                 Toast.makeText(ctx,
-                        "입력된 숫자 " + calc.getNum()+"",Toast.LENGTH_LONG).show();
+                        "입력된 숫자 " + calc.num+"",Toast.LENGTH_LONG).show();
             }
         });
 
@@ -40,7 +38,7 @@ public class CalculatorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int num2 = Integer.parseInt(etext.getText().toString());
-                etext.setText((calc.getNum()+ num2)+"");
+                etext.setText((calc.num+ num2)+"");
             }
         });
     }

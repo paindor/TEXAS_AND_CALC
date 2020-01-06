@@ -3,52 +3,6 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="계 산 기"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:layout_marginTop="5dp"/>
-    <EditText
-        android:id="@+id/etext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
-    <Button
-        android:id="@+id/btn_plus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+"
-        android:textSize="20dp"
-        android:layout_marginTop="5dp"/>
-    <Button
-        android:id="@+id/btn_minus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="-"
-        android:textSize="30dp"
-        android:layout_marginTop="5dp"/>
-    <Button
-        android:id="@+id/btn_multi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="x"
-        android:textSize="30dp"
-        android:layout_marginTop="5dp"/>
-    <Button
-        android:id="@+id/btn_divid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="/"
-        android:textSize="30dp"
-        android:layout_marginTop="5dp"/>
-    <Button
-        android:id="@+id/btn_equal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="="
-        android:textSize="30dp"
-        android:layout_marginTop="5dp"/>
+
 
 </LinearLayout>
